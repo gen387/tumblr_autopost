@@ -28,13 +28,13 @@ chrome_options.add_argument("--disabled-new-style-notification")
 chrome_options.add_argument("--disable-popup-blocking")
 chrome_options.add_argument("test-type")
 
-chrome_options.add_extension("/home/vb4bots/.config/google-chrome/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.24.4_0.crx")
-driver = webdriver.Chrome("/home/vb4bots/Pulpit/Boty/PyBot_tumblr/chromedriver", options=chrome_options)
+chrome_options.add_extension("path/to/extension/extension.crx")
+driver = webdriver.Chrome("path/to/chromedriver", options=chrome_options)
 #adding custom filters to uBlock
 print("Updating filters")
 driver.get('chrome-extension://cjpalhdlnbpafiamejdnhcphjbkeiagm/dashboard.html')
-filters_button = driver.find_element_by_xpath("//*[text()='Moje filtry']").click()
-filePath = '/home/vb4bots/Pulpit/Boty/PyBot_tumblr/@addons/ublock_filters.txt'
+filters_button = driver.find_element_by_xpath("//*[text()='My filters']").click()
+filePath = 'path-to/@addons/ublock_filters.txt'
 with open(filePath) as readFile:
     for cnt, line in enumerate(readFile):
         lineCopied = "{}".format(line)
@@ -63,7 +63,7 @@ time.sleep(5)
 #passing login and password
 email = driver.find_element_by_xpath("//input[@id='signup_determine_email']")
 #+++++++++++++++++++++++++++    email here    ++++++++++++++++++++++++++++
-email.send_keys('adam.eber@wp.pl')
+email.send_keys('account.name@mail.com')
 #+++++++++++++++++++++++++++    email here    ++++++++++++++++++++++++++++
 print("Email Id entered...")
 e_next  = driver.find_element_by_xpath("//span[@class=\"signup_determine_btn active\"]")
@@ -77,7 +77,7 @@ driver.implicitly_wait(5)
 
 #passing password
 e_pwd = driver.find_element_by_xpath("//input[@id='signup_password']")
-e_pwd.send_keys('Piotr1212')
+e_pwd.send_keys('password')
 print("Password entered...")
 
 #logging in & delay 5s
@@ -86,7 +86,7 @@ enterKey.send_keys(Keys.ENTER)
 print("tumblr opened")
 
 #posting with XXs delay
-filePath = '/home/vb4bots/Pulpit/Boty/PyBot_tumblr/links.txt'
+filePath = 'path-to/tumblr_autopost/links.txt'
 with open(filePath) as readFile:
     for line in enumerate(readFile):
         driver.get("https://www.tumblr.com")
