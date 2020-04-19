@@ -1,0 +1,2 @@
+Rozszerzenie: /Users/er/Library/Application Support/Google/Chrome/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.24.4_0.crx
+Plik klucza: /Users/er/Library/Application Support/Google/Chrome/Default/Extensions/cjpalhdlnbpafiamejdnhcphjbkeiagm/1.24.4_0.pem
