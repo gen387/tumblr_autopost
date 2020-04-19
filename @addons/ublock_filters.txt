@@ -1,6 +1,2 @@
 
 ! 1.04.2020 https://www.tumblr.com
-www.tumblr.com##.vertical-bottom.horizontal-center.appearance_step.tutorial.popover
-www.tumblr.com##.blue.glass
-www.tumblr.com##.horizontal-center.discovery_step.tutorial.popover
-##.vertical-bottom.horizontal-center.new_post_step.tutorial.popover
